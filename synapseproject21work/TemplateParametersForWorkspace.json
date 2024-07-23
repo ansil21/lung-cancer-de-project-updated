@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapseproject21work"
+		},
+		"synapseproject21work-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapseproject21work.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"synapseproject21work-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://adlsgen2projectwork.dfs.core.windows.net"
+		}
+	}
+}
